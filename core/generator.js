@@ -49,7 +49,6 @@ class Generator {
   }
 
   generate() {
-    this.generateAppJS();
     this.generateController();
     this.generateDataAccess();
     this.generateEntity();
@@ -114,14 +113,7 @@ class Generator {
     });
   }
 
-  generateAppJS() {
-    this.generateSingleFile({
-      name: "app",
-      file_type: null,
-      save_path: this.base_dir,
-      data: "",
-    });
-  }
+
 
   generateSingleFile({ name, file_type, data, save_path }) {
     let filename = file_type?`${name}.${file_type}.js`:`${name}.js`;

@@ -14,7 +14,7 @@ describe("Test File Creation", () => {
         type: "number",
       },
     ];
-    generator = new Generator("product", schema);
+    generator = new Generator("user", schema);
   });
 
   it("Entity Creation", () => {
