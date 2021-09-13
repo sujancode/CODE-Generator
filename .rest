@@ -1,0 +1,17 @@
+
+post http://localhost:8000/generate/
+Content-Type: application/json
+
+{
+    "schema_name":"product",
+    "schema":[
+      {
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "name": "price",
+        "type": "number"
+      }
+    ]
+}
